@@ -2,7 +2,7 @@ import { Inngest } from "inngest";
 import connectDb from "./db";
 import User from "@/models/user";
 
-export const inngest = new inngest({id: "quickcart-next"})
+export const inngest = new Inngest({id: "quickcart-next"});
 
 export const syncUserCreation = inngest.createFunction(
     {
